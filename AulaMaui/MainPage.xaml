@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AulaMaui.MainPage"
+             Title=""
+             BackgroundColor="Brown">
+
+    <ScrollView>
+        <VerticalStackLayout >
+            <StackLayout Spacing="40" Margin="40,40,40,40" VerticalOptions="Center">
+                
+            <Image WidthRequest="420" Source="macacodoente.jpg"
+                   HeightRequest="420"/>
+                
+            <Label FontAttributes="Bold" 
+                   Text="O Macaquinho Chimpanzildo está doente 😭 e precisa de bananas 🍌 para pagar seu tratamento💸"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Header"
+                   >
+            </Label>
+            
+                <Button MaximumHeightRequest="80"
+                        MaximumWidthRequest="300"
+                        Text="Doar Bananas 🍌"
+                        TextColor="White"
+                        FontSize="Large"></Button>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
