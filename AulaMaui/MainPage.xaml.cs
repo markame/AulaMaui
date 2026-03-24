@@ -1,23 +1,26 @@
 ﻿using AulaMaui.Model;
+using AulaMaui.View;
 
 namespace AulaMaui
 {
     public partial class MainPage : ContentPage
     {
-        Macaco macaco = new Macaco();
+        Animal animal = new Animal();
        
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void novoMacaco(object sender, EventArgs e)
+        private async void novoAnimal(object sender, EventArgs e)
         {
-            macaco.Nome = et_nome.Text;
-            macaco.Especie = et_especie.Text;   
-            macaco.Doenca = et_doenca.Text;
-            macaco.Imagem = et_imagem.Text;
-             DisplayAlert("Macaco criado", $"O macaco {macaco.Nome} da espécie {macaco.Especie} com a doença {macaco.Doenca} e imagem {macaco.Imagem} foi criado com sucesso!", "OK","Cancelar");
+            animal.Nome = et_nome.Text;
+            animal.Especie = et_especie.Text;   
+            animal.Doenca = et_doenca.Text;
+            animal.Imagem = et_imagem.Text;
+            await Navigation.PushAsync(new MostraAnimal(animal));
+
+
 
         }
     }

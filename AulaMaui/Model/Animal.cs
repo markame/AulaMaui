@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace AulaMaui.Model
 {
-    public class Macaco
+    public class Animal
     {
-        public Macaco() { }
+        public Animal() { }
 
         [Key]
         private int id;

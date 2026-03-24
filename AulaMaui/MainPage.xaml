@@ -8,19 +8,19 @@
     <ScrollView>
         <VerticalStackLayout >
             <StackLayout Spacing="40" Margin="40,40,40,40" VerticalOptions="Center">
-                <Label Text="Nome do macaco:"/>
+                <Label Text="Nome do Animal:"/>
                 <Entry Placeholder="Digite o nome"
                        x:Name="et_nome"/>
-                <Label Text="Especie do macaco:"/>
+                <Label Text="Especie do Animal:"/>
                 <Entry Placeholder="Digite a especie"
                        x:Name="et_especie"/>
-                <Label Text="Doença do macaco:"/>
+                <Label Text="Doença do Animal:"/>
                 <Entry Placeholder="Digite a doença"
                        x:Name="et_doenca"/>
-                <Label Text="Imagem do macaco:"/>
+                <Label Text="Imagem do Animal:"/>
                 <Entry Placeholder="Digite a Imagem"
                        x:Name="et_imagem"/>
-                <Button Clicked="novoMacaco" Text="Cadastrar Macaco"/>
+                <Button Clicked="novoAnimal" Text="Cadastrar Aninal"/>
             </StackLayout>
         </VerticalStackLayout>
     </ScrollView>

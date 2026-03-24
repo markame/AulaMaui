@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AulaMaui.View.MostraAnimal"
+             Title="MostraAnimal"
+             BackgroundColor="Brown">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Margin="40,40,40,40">
+            <Frame CornerRadius="20" BorderColor="White">
+                <StackLayout>
+                  <Label TextColor="White" x:Name="lblnome"/>
+                  <Label TextColor="White" x:Name="lblespecie"/>
+                  <Label TextColor="White" x:Name="lbldoenca"/>
+                   <Image x:Name="imagem" 
+                          Aspect="Fill" 
+                          WidthRequest="200"/>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
