@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AulaMaui.View.ListaAnimal"
+             Title="ListaAnimal">
+    <ScrollView>
+        <CollectionView x:Name="collectionAnimal">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="#C49B33"
+                        StrokeThickness="4"
+                        StrokeShape="RoundRectangle 40,0,0,40"
+                        Background="#2B0B98"
+                        Padding="16,8"
+                        HorizontalOptions="Center">
+                        <StackLayout>
+                        <Label Text="{Binding Nome}"
+                            TextColor="White"
+                            FontSize="20"
+                            HorizontalOptions="Center"/>
+                        <Label Text="{Binding Especie}"
+                            TextColor="White"
+                            FontSize="20"
+                            HorizontalOptions="Center"/>
+                            <Label Text="{Binding Doenca}"
+                            TextColor="White"
+                            FontSize="20"
+                            HorizontalOptions="Center"/>
+                            <Image Source="{Binding Imagem}"
+                            Aspect="Fill"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+                 
+    </ScrollView>
+</ContentPage>
