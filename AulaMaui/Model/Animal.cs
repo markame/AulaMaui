@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -17,10 +18,12 @@ namespace AulaMaui.Model
         private string especie;
         private string doenca;
         private string imagem;
+   
         public int Id { get => id; set => id = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Especie { get => especie; set => especie = value; }
         public string Doenca { get => doenca; set => doenca = value; }
         public string Imagem { get => imagem; set => imagem = value; }
+        
     }
 }

@@ -1,4 +1,6 @@
+using AulaMaui.View;
 namespace AulaMaui.View;
+
 
 public partial class Menu : ContentPage
 {
@@ -7,13 +9,13 @@ public partial class Menu : ContentPage
 		InitializeComponent();
 	}
 
-    private void btn_Cadastrar(object sender, EventArgs e)
+    private async void btn_Cadastrar(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Cadastrar());
+        await Navigation.PushAsync(new MainPage());
     }
 
-    private void btn_Listar(object sender, EventArgs e)
+    private async void btn_Listar(object sender, EventArgs e)
     {
-
+       //await Navigation.PushAsync(new ListaAnimal());
     }
 }
