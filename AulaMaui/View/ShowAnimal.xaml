@@ -1,29 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AulaMaui.MainPage"
-             Title=""
-             BackgroundColor="Brown">
-
+             x:Class="AulaMaui.View.ShowAnimal"
+             Title="ShowAnimal">
     <ScrollView>
         <VerticalStackLayout >
             <StackLayout Spacing="40" Margin="40,40,40,40" VerticalOptions="Center">
                 <Label Text="Nome do Animal:"/>
                 <Entry Placeholder="Digite o nome"
-                       x:Name="et_nome"/>
+                    x:Name="ets_nome"/>
                 <Label Text="Especie do Animal:"/>
                 <Entry Placeholder="Digite a especie"
-                       x:Name="et_especie"/>
+                    x:Name="ets_especie"/>
                 <Label Text="Doença do Animal:"/>
                 <Entry Placeholder="Digite a doença"
-                       x:Name="et_doenca"/>
+                    x:Name="ets_doenca"/>
                 <Label Text="Imagem do Animal:"/>
-                <Entry Placeholder="Digite a Imagem"
-                       x:Name="et_imagem"/>
-                <Button Clicked="novoAnimal" Text="Cadastrar Aninal"/>
+                <Image 
+                    x:Name="ets_imagem"/>
             </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
-    
-
 </ContentPage>

@@ -4,7 +4,9 @@
              x:Class="AulaMaui.View.ListaAnimal"
              Title="ListaAnimal">
     <ScrollView>
-        <CollectionView x:Name="collectionAnimal">
+        <CollectionView x:Name="collectionAnimal"
+                        SelectionMode="Single"
+                        SelectionChanged="collectionAnimal_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Border Stroke="#C49B33"
